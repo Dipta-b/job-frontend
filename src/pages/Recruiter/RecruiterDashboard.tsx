@@ -3,7 +3,7 @@ import { StatCard } from '../../components/dashboard/StatCard';
 import { Users, Briefcase, Calendar, Star, Search, Filter } from 'lucide-react';
 import { Card, Badge, Button } from '../../components/ui/BaseComponents';
 import { motion } from 'framer-motion';
-import { cn } from '../../utils/utils';
+
 import API_BASE_URL from '../../config/api';
 
 const RecruiterDashboard = () => {
@@ -122,7 +122,7 @@ const RecruiterDashboard = () => {
               >
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold">
-                    {app.name.split(' ').map(n => n[0]).join('')}
+                    {app.name.split(' ').map((n: string) => n[0]).join('')}
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold">{app.name}</h4>

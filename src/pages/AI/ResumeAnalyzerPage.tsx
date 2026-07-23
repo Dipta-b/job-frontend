@@ -11,7 +11,7 @@ const ResumeAnalyzerPage = () => {
   const [isUploading, setIsUploading] = useState(false);
   const [analysis, setAnalysis] = useState<null | any>(null);
   const [file, setFile] = useState<File | null>(null);
-  const [jobId, setJobId] = useState<string>(""); // No longer hardcoded to a bogus ID
+  const [jobId] = useState<string>(""); // No longer hardcoded to a bogus ID
 
   const handleUpload = async () => {
     if (!file) {
@@ -181,8 +181,8 @@ const ResumeAnalyzerPage = () => {
                           startAngle={90}
                           endAngle={450}
                         >
-                          {chartData.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} cornerRadius={80} />
+                          {chartData.map((_entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                           ))}
                         </Pie>
                       </PieChart>

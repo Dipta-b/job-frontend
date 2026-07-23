@@ -3,7 +3,7 @@ import { DashboardLayout } from "../../components/layout/DashboardLayout";
 import { Card, Badge, Button } from "../../components/ui/BaseComponents";
 import { 
   FileText, Clock, Building2, MapPin, ExternalLink, 
-  Briefcase, Search, AlertCircle, Loader2 
+  Briefcase, Search, Loader2 
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import toast from "react-hot-toast";

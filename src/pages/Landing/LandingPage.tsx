@@ -14,8 +14,7 @@ import {
   Globe
 } from 'lucide-react';
 
-import { AuthContext } from '../../context/AuthContext';
-import { useContext } from 'react';
+import { useAuth } from '../../context/AuthContext';
 
 const LandingPage = () => {
   const containerVariants = {
@@ -27,7 +26,7 @@ const LandingPage = () => {
       }
     }
   };
-  const { user, setUser } = useContext(AuthContext)
+  const { user, setUser } = useAuth()
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button, Card } from '../../components/ui/BaseComponents';
-import { Mail, Lock, ArrowLeft, User, ShieldCheck } from 'lucide-react';
+import { Mail, Lock, ArrowLeft, User } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
